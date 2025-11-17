@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Developer | Blandskron</title>
+    <!-- Importamos Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Importamos fuentes (Inter para UI, Fira Code para look 'dev') -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/whastapp.css">
+    <style>
+        /* Estilos personalizados para el 'look dev' */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            /* Fuente principal Inter */
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a; /* Un negro más profundo */
+            color: #f3f4f6; /* text-gray-100 */
+        }
+        /* Clase para la fuente mono */
+        .font-mono {
+            font-family: 'Fira Code', monospace;
+        }
+        /* Efecto de 'glow' sutil para las tarjetas y botones */
+        .card-hover-effect {
+            border: 1px solid transparent; /* Borde inicial */
+            transition: all 0.3s ease-in-out;
+        }
+        .card-hover-effect:hover {
+            transform: translateY(-8px);
+            border-color: rgba(99, 102, 241, 0.4); /* Color índigo semi-transparente */
+            box-shadow: 0 0 20px rgba(99, 102, 241, 0.2), /* Sombra exterior */
+                        inset 0 0 10px rgba(99, 102, 241, 0.1); /* Sombra interior */
+        }
+        /* Efecto para el botón de GitHub */
+        .github-btn-hover {
+            transition: all 0.3s ease;
+        }
+        .github-btn-hover:hover {
+            background-color: #f3f4f6; /* text-gray-100 */
+            color: #111827; /* text-gray-900 */
+        }
+        .github-btn-hover:hover svg {
+            fill: #111827; /* Cambia el color del SVG en hover */
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 antialiased">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-gray-950/70 border-b border-gray-800">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+            <img class="w-10" src="./assets/img/logo1.png" alt="logo">
+            <!-- Logo / Nombre -->
+            <div class="text-2xl font-bold tracking-tighter">
+                Blandskron<span class="text-indigo-400">.dev</span>
+            </div>
+            
+            <!-- Links Sociales -->
+            <div class="flex items-center space-x-5">
+                <a href="https://www.linkedin.com/in/blandskron/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-indigo-400 transition-colors" aria-label="LinkedIn">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.783-1.75-1.75s.784-1.75 1.75-1.75 1.75.783 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/Blandskron" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-indigo-400 transition-colors" aria-label="GitHub">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <section class="text-center py-20 sm:py-28">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tighter mb-4">
+                Hola, soy <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-500">Blandskron</span>
+            </h1>
+            <p class="text-xl sm:text-2xl text-gray-300 max-w-2xl mx-auto mb-6">
+                Desarrollador Full Stack. Transformo ideas en código funcional, elegante y escalable.
+            </p>
+            <p class="font-mono text-lg text-indigo-400 mb-10">
+                &gt; Escribiendo el futuro, una línea a la vez.
+            </p>
+            <a href="#proyectos" class="text-lg bg-indigo-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-indigo-500 transition-colors duration-300">
+                Ver mis proyectos
+            </a>
+        </section>
+
+        <!-- Sección de Proyectos -->
+        <section id="proyectos" class="py-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center tracking-tight mb-12">
+                Proyectos Destacados
+            </h2>
+
+            <!-- Grid de Proyectos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Proyecto 1: Python Django -->
+                <div class="card-hover-effect bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://placehold.co/600x400/1f2937/6366f1?text=Full+Stack+Django" alt="Banner del proyecto Python Django" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex-grow">
+                            <!-- Tags de Tecnología -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs font-mono bg-indigo-900 text-indigo-300 px-3 py-1 rounded-full">Python</span>
+                                <span class="text-xs font-mono bg-green-900 text-green-300 px-3 py-1 rounded-full">Django</span>
+                                <span class="text-xs font-mono bg-blue-900 text-blue-300 px-3 py-1 rounded-full">SQL</span>
+                            </div>
+                            <!-- Título y Descripción -->
+                            <h3 class="text-2xl font-bold text-white mb-3">Plataforma Full Stack V2</h3>
+                            <p class="text-gray-300 mb-6 text-sm leading-relaxed">
+                                Aplicación web completa que demuestra arquitectura robusta, gestión de BBDD (SQL) y despliegue ágil. Un sistema listo para producción.
+                            </p>
+                        </div>
+                        <!-- Botón de GitHub -->
+                        <a href="https://github.com/Blandskron/Curso-Python-Django-2" target="_blank" rel="noopener noreferrer" class="github-btn-hover mt-auto w-full text-center bg-gray-800 border border-gray-700 text-white font-medium py-2.5 px-4 rounded-lg flex items-center justify-center gap-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            <span>Ver Repositorio</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2: Vital Massage -->
+                <div class="card-hover-effect bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://placehold.co/600x400/1f2937/a78bfa?text=Gestor+SaaS" alt="Banner del proyecto Vital Massage" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex-grow">
+                            <!-- Tags de Tecnología -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs font-mono bg-purple-900 text-purple-300 px-3 py-1 rounded-full">SaaS</span>
+                                <span class="text-xs font-mono bg-gray-700 text-gray-300 px-3 py-1 rounded-full">Gestión</span>
+                                <span class="text-xs font-mono bg-pink-900 text-pink-300 px-3 py-1 rounded-full">Frontend</span>
+                            </div>
+                            <!-- Título y Descripción -->
+                            <h3 class="text-2xl font-bold text-white mb-3">Vital Massage Service</h3>
+                            <p class="text-gray-300 mb-6 text-sm leading-relaxed">
+                                Solución SaaS para masoterapeutas. Organiza reservas, clientes y terapias con módulos de gestión, reportes y registro de sesiones.
+                            </p>
+                        </div>
+                        <!-- Botón de GitHub -->
+                        <a href="https://github.com/Blandskron/vital-massage-service" target="_blank" rel="noopener noreferrer" class="github-btn-hover mt-auto w-full text-center bg-gray-800 border border-gray-700 text-white font-medium py-2.5 px-4 rounded-lg flex items-center justify-center gap-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            <span>Ver Repositorio</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3: Barbería -->
+                <div class="card-hover-effect bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://placehold.co/600x400/1f2937/f472b6?text=Landing+Page" alt="Banner del proyecto Barbería" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex-grow">
+                            <!-- Tags de Tecnología -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="text-xs font-mono bg-yellow-900 text-yellow-300 px-3 py-1 rounded-full">JavaScript</span>
+                                <span class="text-xs font-mono bg-blue-800 text-blue-300 px-3 py-1 rounded-full">CSS3</span>
+                                <span class="text-xs font-mono bg-orange-800 text-orange-300 px-3 py-1 rounded-full">HTML5</span>
+                            </div>
+                            <!-- Título y Descripción -->
+                            <h3 class="text-2xl font-bold text-white mb-3">Landing Page 'Barbería'</h3>
+                            <p class="text-gray-300 mb-6 text-sm leading-relaxed">
+                                Proyecto de landing page estática con diseño responsive. Foco en HTML semántico, CSS moderno y JS puro para una experiencia de usuario fluida.
+                            </p>
+                        </div>
+                        <!-- Botón de GitHub -->
+                        <a href="https://github.com/Blandskron/barberia" target="_blank" rel="noopener noreferrer" class="github-btn-hover mt-auto w-full text-center bg-gray-800 border border-gray-700 text-white font-medium py-2.5 px-4 rounded-lg flex items-center justify-center gap-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            <span>Ver Repositorio</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 mt-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-gray-500">
+            <p class="font-mono text-sm">Diseñado y construido por Blandskron.</p>
+            <p class="text-xs mt-1">© <span id="current-year"></span> Todos los derechos reservados.</p>
+            <img class="w-10 block mx-auto mt-5" src="./assets/img/logoblanco.png" alt="logoblanco">
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/56912345678" class="whatsapp-float" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
+
+    <script>
+        // Pequeño script para el año actual en el footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
