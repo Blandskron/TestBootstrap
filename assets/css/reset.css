@@ -1,0 +1,92 @@
+/* ===========================
+   RESET CSS BÁSICO / MODERNO
+   =========================== */
+
+/* 1. Box sizing más predecible */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Quitar márgenes por defecto */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Altura base del documento */
+html,
+body {
+  height: 100%;
+}
+
+/* 4. Tipografía base */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* 5. Imágenes y medios responsivos */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Quitar estilos de lista por defecto */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 7. Inputs, botones y campos de formulario */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Enlaces sin subrayado por defecto (ajústalo según tu estilo) */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 9. Botones */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* 10. Tablas básicas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 11. Quitar comillas automáticas de blockquote y q */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+}
+
+/* 12. Scroll suave (opcional) */
+html {
+  scroll-behavior: smooth;
+}
