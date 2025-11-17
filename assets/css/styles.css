@@ -19,3 +19,11 @@ ul {
 .liNav1:hover {
     transform: scale(1.1); 
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+}
